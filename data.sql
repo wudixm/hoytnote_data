@@ -33,7 +33,7 @@ CREATE TABLE `note` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `note_uid` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `note` (
 
 LOCK TABLES `note` WRITE;
 /*!40000 ALTER TABLE `note` DISABLE KEYS */;
-INSERT INTO `note` VALUES (1,1,2,'我们','做',NULL,'2021-10-27 20:06:14','2021-10-27 20:06:14'),(2,1,3,'急急急','我我我中宁哦明细账',NULL,'2021-10-27 23:03:20','2021-10-28 00:01:06');
+INSERT INTO `note` VALUES (1,1,2,'我们','做',NULL,'2021-10-27 20:06:14','2021-10-27 20:06:14'),(2,1,3,'急急急','我我我中宁哦明细账',NULL,'2021-10-27 23:03:20','2021-10-28 00:01:06'),(3,1,3,'哈哈哈','点点滴滴农民工',NULL,'2021-10-28 00:04:36','2021-10-28 00:04:48'),(4,1,4,'call','具体',NULL,'2021-10-28 00:05:10','2021-10-28 00:05:10');
 /*!40000 ALTER TABLE `note` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -62,7 +62,7 @@ CREATE TABLE `user_category` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `user_category_uid` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -71,7 +71,7 @@ CREATE TABLE `user_category` (
 
 LOCK TABLES `user_category` WRITE;
 /*!40000 ALTER TABLE `user_category` DISABLE KEYS */;
-INSERT INTO `user_category` VALUES (3,1,'测试',NULL,'2021-10-27 23:03:10','2021-10-27 23:03:10');
+INSERT INTO `user_category` VALUES (3,1,'测试',NULL,'2021-10-27 23:03:10','2021-10-27 23:03:10'),(4,1,'你你你',NULL,'2021-10-28 00:05:00','2021-10-28 00:05:00');
 /*!40000 ALTER TABLE `user_category` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -84,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-28 16:02:05
+-- Dump completed on 2021-10-28 17:13:58
